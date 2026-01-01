@@ -49,12 +49,17 @@ The exported dataset becomes the PRO reference inside PRE.
 
 ## Workflow Overview
 WORKSPACE PRO
+
 └─ Part 1: Extract DDLs → Delta Table
+
 ├─ Export via Shared Storage
+
 └─ Export via CSV
 ↓
 WORKSPACE PRE
+
 ├─ Part 2: Import & Compare
+
 └─ Part 3: Synchronize Model
 
 
