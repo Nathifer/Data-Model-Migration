@@ -32,7 +32,7 @@ Because workspaces are isolated, DDLs must be transferred externally.
 
 **Option A – Shared Storage**
 
-Write the Delta table (or a subset) to storage accessible by both workspaces
+- Write the Delta table (or a subset) to storage accessible by both workspaces
 
 **Option B – CSV Export**
 
