@@ -37,11 +37,12 @@ This makes the process reusable and environment-agnostic.
 
 This guarantees only relevant user objects are analyzed.
 
+---
+
 #### 🚫 4.  Automatic Exclusions
 
 To ensure clean and relevant metadata extraction, the process automatically excludes **non-business, temporary, backup, and development artifacts**.
 
----
 
 ##### 🧾 4.1 Excluded Tables (by Name Pattern)
 
