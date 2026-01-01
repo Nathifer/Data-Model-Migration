@@ -37,13 +37,13 @@ This makes the process reusable and environment-agnostic.
 
 This guarantees only relevant user objects are analyzed.
 
-### 🚫 Automatic Exclusions
+#### 🚫 4.  Automatic Exclusions
 
 To ensure clean and relevant metadata extraction, the process automatically excludes **non-business, temporary, backup, and development artifacts**.
 
 ---
 
-#### 🧾 1. Excluded Tables (by Name Pattern)
+##### 🧾 4.1 Excluded Tables (by Name Pattern)
 
 Any table matching the following patterns is **automatically excluded**, regardless of the database:
 
@@ -66,7 +66,7 @@ These patterns typically represent:
 
 ---
 
-#### 🗄 2. Excluded Databases / Schemas
+##### 🗄 4.2 Excluded Databases / Schemas
 
 The following databases or schemas are **fully excluded** from processing:
 
@@ -81,7 +81,7 @@ These environments are considered **non-authoritative** and are not part of the 
 
 ---
 
-#### 📋 3. Explicitly Excluded Tables (Inside Valid Databases)
+##### 📋 4.3 Explicitly Excluded Tables (Inside Valid Databases)
 
 Even within valid business databases, the following tables are explicitly excluded:
 
@@ -91,7 +91,7 @@ Even within valid business databases, the following tables are explicitly exclud
 
 ---
 
-#### ✅ Resulting Behavior
+##### ✅ Resulting Behavior
 
 - Only **governed, production-grade tables** are extracted
 - Noise from backups, tests, and temporary objects is eliminated
@@ -101,7 +101,7 @@ This exclusion logic ensures a **clean, stable, and auditable** Hive model refer
 
 ---
 
-#### 📜 4. Table-Level Metadata Extraction
+#### 📜 5. Table-Level Metadata Extraction
 
 For every eligible table, the process extracts:
 
@@ -120,7 +120,7 @@ Each extraction is tracked with a status:
 
 ---
 
-#### 💾 5. Delta Metadata Storage
+#### 💾 6. Delta Metadata Storage
 
 All extracted metadata is stored in a **Delta table** using a structured schema:
 
@@ -139,7 +139,7 @@ All extracted metadata is stored in a **Delta table** using a structured schema:
 
 ---
 
-#### 🔎 6. Validation & Sampling
+#### 🔎 7. Validation & Sampling
 
 - Sample DDL inspection
 - Per-database extraction statistics
