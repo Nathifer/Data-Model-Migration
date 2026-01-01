@@ -30,17 +30,15 @@ DDL transfer between environments is done via:
 
 Because workspaces are isolated, DDLs must be transferred externally.
 
-Option A – Shared Storage
+**Option A – Shared Storage**
 
 Write the Delta table (or a subset) to storage accessible by both workspaces
 
-Option B – CSV Export
+**Option B – CSV Export**
 
-Query the Delta table in PRO
-
-Export the results to CSV
-
-Import the CSV into WORKSPACE PRE
+- Query the Delta table in PRO
+- Export the results to CSV
+- Import the CSV into WORKSPACE PRE
 
 The exported dataset becomes the PRO reference inside PRE.
 
