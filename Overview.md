@@ -55,7 +55,9 @@ WORKSPACE PRO
 ├─ Export via Shared Storage
 
 └─ Export via CSV
+
 ↓
+
 WORKSPACE PRE
 
 ├─ **Part 2:** Import & Compare
